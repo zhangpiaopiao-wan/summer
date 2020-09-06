@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{
+double x,y;
+    printf("输入限速");
+    printf(" 输入车速\n");
+scanf("%lf",&y);
+scanf("%lf",&x);
+
+if (x<=y*1.1)
+   printf("没有超速");
+else 
+   if (x<=1.5*y)
+   printf("超速，罚款两百");
+   else 
+   printf("严重超速，吊销驾驶证");
+    return 0;
+}

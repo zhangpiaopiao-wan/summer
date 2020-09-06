@@ -1,0 +1,23 @@
+#include "stdafx.h"
+
+int main(int argc, char* argv[])
+{
+	int i,sum;
+	scanf("%d",&sum);
+		char op;
+	scanf("%c",&op);
+	while(op!='='){
+	scanf("%d",&i);	
+	if(op=='+')
+		sum=sum+i;
+	else if(op=='-')
+		sum=sum-i;
+	else if(op=='*')
+		sum=sum*i;
+	else if(op=='/')
+		sum=sum/i;
+	scanf("%c",&op);}
+	printf("%d",sum);
+	return 0;
+}
+

@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{   
+    int i;
+    printf("本软件有五个功能\n1,打开文件夹\n2,关闭文件夹,\n3,打开QQ\n4,关闭QQ\n5,打开微信。\n");
+    printf("请选择使用的功能\n");
+    scanf("%d",&i);
+    
+    switch(i)
+    {    
+     case 1:printf("你已选择功能1\n");break;    
+     case 2:printf("你已选择功能2\n");break;    
+     case 3:printf("你已选择功能3\n");break;    
+     case 4:printf("你已选择功能4\n");break;
+     case 5:printf("你已选择功能5\n");break;
+     default:printf("输入错误\n");break;
+    }
+    
+    return 0;  
+}

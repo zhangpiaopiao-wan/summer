@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int countdigit(int a,int b)
+{int z;
+ z=a;
+ while(z>0)
+ {z=a%10;
+  a=a/10;
+  if(z==2)
+  {   b=b+1;
+      z=a;
+  }
+}
+ return b;
+}
+
+int main()
+{   int a,b,d;
+    scanf("%d",&a);
+    b=0;
+    
+    d=countdigit(a,b);
+    
+    printf("2鐨勪釜鏁颁负%d",d);
+    
+    return 0;
+}

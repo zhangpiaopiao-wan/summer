@@ -1,0 +1,26 @@
+#include "stdafx.h"
+int prime(int n);
+int main(int argc, char* argv[])
+{
+	int s=0,a=0,m,n,i;
+	printf("enter n n<=500\n");
+		scanf("%d",&n);
+	printf("enter m m>=1\n");
+	scanf("%d",&m);
+	for(i=m;i<=n;i++){
+		if(prime(i)){
+			a++;
+		s=s+i;}}
+	printf("a=%d,s=%d",a,s);
+	return 0;
+}
+int prime(int n){
+	int j,c=1;
+	for(j=2;j<=n/2;j++){
+if(n%j==0){
+c=0;
+break;
+	}}
+
+return c;
+}

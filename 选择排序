@@ -1,0 +1,20 @@
+#include "stdafx.h"
+
+int main(int argc, char* argv[])
+{
+	int a[6],x,q,i,k;
+	for(i=0;i<6;i++)
+	scanf("%d",&a[i]);
+	for(i=0;i<6;i++){
+		x=i;
+		for(k=i;k<6;k++)
+			if(a[k]>a[x]) x=k;  
+			q=a[i];
+			a[i]=a[x];
+			a[x]=q;       
+	}
+	for(i=0;i<6;i++)
+		printf("%d ",a[i]);
+	return 0;
+}
+

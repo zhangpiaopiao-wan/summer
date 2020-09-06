@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,t;
+    b=78,t=1;
+    printf("璇疯緭鍏ヤ綘鐨勬暟瀛梊n");
+    scanf("%d",&a);
+    
+    while(a!=b && a>0 && t<7)
+    {
+     if(a>b)
+     {printf("浣犺緭鍏ョ殑鏁板瓧澶т簡锛岃閲嶆柊杈撳叆\n");
+     scanf("%d",&a);
+     t=t+1;continue;}
+     else  
+     {printf("浣犺緭鍏ョ殑鏁板瓧灏忎簡锛岃閲嶆柊杈撳叆\n");
+     scanf("%d",&a);
+     t=t+1;continue;}
+    }
+     
+    
+    if(t==1 && a==b)
+      printf("Bingo!鎭枩浣犵寽瀵逛簡!");
+    if(a==b && t<=3 && t>1)
+      printf("Lucky!鎭枩浣犵寽瀵逛簡!");
+    if(a==b && t<=7 && t>3)
+         printf("Good Guess!浣犵寽瀵逛簡");
+    if(t>=7)
+         printf("璇ラ獋!");
+    if(a<0)
+         printf("娓告垙缁撴潫");
+    
+    return 0;
+}

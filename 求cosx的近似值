@@ -24,6 +24,5 @@ int main()
     y=funcos(e,x);
     
     printf("cos%.3f鐨勮繎浼煎€间负%lf",x,y);
-    return 0;
-     
+    return 0;   
 }
